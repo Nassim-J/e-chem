@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Styles1.css" />
+    <link rel="stylesheet" href="Styles.css" />
+  </head>
+  <body>
+    <div id="preloader3"></div>
+    <header>
+      <img class="logo" src="Logo.E-Chem.png" alt="logo" />
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="nav-icon"></span
+      ></label>
+      <ul class="menu">
+        <li><a href="Home-Page.html">Home</a></li>
+        <li><a href="Lessons.html">Lessons</a></li>
+        <li>
+          <a href="More-Information.html">More Information</a>
+        </li>
+        <li><a href="Contact-us.html">Contact us</a></li>
+      </ul>
+    </header>
+    <div id="contactuscontainer">
+      <img src="contactus.gif" class="contactus-gifbox1" />
+      <div id="contact-us-box">
+        <p class="intro4">Contact Us, We are listening!</p>
+
+        <label for="Name" class="Questions-contactus1">Full Name:</label>
+        <input type="text" id="Name" name="Name" placeholder="Jane Doe" />
+        <label for="email" class="Questions-contactus">Email:</label>
+        <input type="text" id="email" name="email" placeholder="@gmail.com" />
+        <label for="message" class="Questions-contactus"
+          >Leave a Message:</label
+        >
+        <input
+          type="text"
+          id="message"
+          name="message"
+          placeholder="your obsession!"
+        />
+        <div class="box1random-contactus">
+          <img src="insta-icon.jpeg" class="icons" />
+          <img src="facebook icon.png" class="icons" />
+          <img src="email.icon.png" class="icons" />
+          <img src="twitter icon.jpeg" class="icons" />
+        </div>
+      </div>
+      <a><button class="button">Send</button></a>
+    </div>
+    <script>
+      var loader = document.getElementById("preloader3");
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
+  </body>
+</html>

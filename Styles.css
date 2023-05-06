@@ -1,0 +1,223 @@
+body {
+  margin: 0; /*geeting rid of the default white margin around the body edges*/
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+}
+a {
+  color: #fff;
+}
+header {
+  background-color: #000;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+}
+header ul {
+  margin: 0;
+  padding: 0px;
+  list-style: none; /*remove the bullet points*/
+  overflow: hidden; /*anything that will flow out of bounds will be hidden*/
+  position: relative;
+  top: 50px;
+}
+header ul a {
+  display: block;
+  padding: 20px;
+  border-right: 1px solid #aaa;
+  text-decoration: none; /*remove underline*/
+}
+header ul a:hover {
+  background-color: #39ff14;
+}
+header .logo {
+  margin-left: 5%;
+  float: left;
+  display: block;
+  width: 150px;
+  height: 150px;
+}
+header .menu {
+  clear: both; /*forces the menu to be cleared below the left floated title*/
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+header .menu-icon {
+  padding: 28px 20px;
+  position: relative;
+  left: 85%;
+  top: 50px;
+  cursor: pointer;
+}
+header .menu-icon .nav-icon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background 0.2s ease-out;
+}
+header .menu-icon .nav-icon:before {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  top: 5px;
+}
+header .menu-icon .nav-icon:after {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  top: -5px;
+}
+header .menu-btn {
+  display: none;
+}
+header .menu-btn:checked ~ .menu {
+  max-height: 300px;
+  background: black;
+}
+header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    height: 150px;
+  }
+  header .logo {
+    width: 150px;
+    height: 150px;
+  }
+  header li {
+    float: left;
+    font-size: large;
+  }
+  header li a {
+    padding: 20px 30px;
+  }
+  header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  header .menu-icon {
+    display: none;
+  }
+}
+@media only screen and (min-width: 920px) {
+  header {
+    height: 125px;
+  }
+  header .logo {
+    padding-left: 80px;
+    width: 125px;
+    height: 125px;
+  }
+  header li {
+    float: left;
+    font-size: larger;
+  }
+  header li a {
+    padding: 20px 30px;
+  }
+  header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  header .menu-icon {
+    display: none;
+  }
+}
+.GOLDENRAIN {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: 0%;
+  padding-right: 30%;
+}
+.GOLDENRAIN img {
+  z-index: 200;
+  width: 90px;
+  animation: GOLDENRAIN 7s linear infinite;
+}
+@keyframes GOLDENRAIN {
+  0% {
+    transform: translate(0px, -400px);
+    opacity: 2;
+  }
+  25% {
+    transform: translate(200px, 500px);
+  }
+  50% {
+    transform: translate(400px, 1500px);
+  }
+  75% {
+    transform: translate(600px, 2000px);
+  }
+  100% {
+    transform: translateX(800px);
+    transform: translateY(3500px);
+  }
+}
+.GOLDENRAIN img:nth-child(1) {
+  animation-delay: 0s;
+}
+.GOLDENRAIN img:nth-child(2) {
+  animation-delay: 6s;
+}
+.sakura img:nth-child(3) {
+  animation-delay: 2s;
+}
+.GOLDENRAIN img:nth-child(4) {
+  animation-delay: 1s;
+}
+.GOLDENRAIN img:nth-child(5) {
+  animation-delay: 3s;
+}
+.GOLDENRAIN img:nth-child(6) {
+  animation-delay: 4s;
+}
+.GOLDENRAIN img:nth-child(7) {
+  animation-delay: 5s;
+}
+.GOLDENRAIN img:nth-child(8) {
+  animation-delay: 0s;
+}
+.GOLDENRAIN img:nth-child(9) {
+  animation-delay: 6s;
+}
+.GOLDENRAIN img:nth-child(10) {
+  animation-delay: 5s;
+}
+.GOLDENRAIN img:nth-child(11) {
+  animation-delay: 3s;
+}
+.GOLDENRAIN img:nth-child(12) {
+  animation-delay: 1s;
+}
+.GOLDENRAIN img:nth-child(13) {
+  animation-delay: 4s;
+}
+.GOLDENRAIN img:nth-child(14) {
+  animation-delay: 2s;
+}
